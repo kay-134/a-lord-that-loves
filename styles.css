@@ -1,0 +1,395 @@
+html {
+    /* Aside from the headers, all the text on the webpage is in Arial*/
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Website background color is beige*/
+    background-color: white;
+
+    /* Text unless otherwise specified is a dark forest green*/
+    color: #414141;
+    
+}
+
+/* changes the color of the svg that's there to hover over to reveal the menu in the mobile view*/
+svg:hover line{
+    stroke:  #81A69B;
+}
+body{
+    cursor: url('cursor.png'), auto; /* Replace 'path/to/your/image.png' with the actual path */
+    text-align: center;
+}
+
+body, h1, header {
+    /* No margins or paddings defaulted*/
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    /* All h1 text is in the custom */
+    font-family: "Jacquard 24", system-ui;
+    font-size: 6em;
+    text-align: center;
+    padding: 10px;
+   
+}
+
+h2 {
+    font-family: "Jersey 25", sans-serif;
+    font-size: 3em;
+    color: #6461A0;
+    text-align: center;
+    line-height: 1;
+}
+
+h3 {
+    font-family: "Jersey 25", sans-serif;
+    font-size: 2em;
+    padding-top: 0px;
+    
+} 
+
+h3 a {
+    background-color:#C3BEFF;
+    padding: 0.6em;
+    border-radius: 10px;
+    margin: 0.25em;
+    line-height: 1.5em;;
+}
+
+h4 {
+    font-family: "Boldonse", system-ui;
+}
+
+p{
+    font-size: 1.5em;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana, sans-serif';
+
+}
+h1, h3, h4, p, header {
+    color: #414141;
+}
+#title {
+    color: #414141;
+}
+
+svg {
+    position: relative;
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 3em;
+}
+a {
+    text-decoration: none;
+    color: #414141;
+}
+
+a:hover{
+   background-color: #81A69B;
+}
+
+a:active{
+    color: white;
+}
+
+ul {
+    font-size: 1.5em;
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+header {
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-areas: 
+      "header header " 
+      "nav main"
+      "nav footer"  ;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 0.8fr 4fr;
+    height: 100vh;
+}
+
+.boldonse-regular {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flex-container {
+    text-align: center;
+    background-color: #C3BEFF;
+    border-radius: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 10px ;
+
+    text-align: center;
+   
+}
+
+.relationship-headings h3{
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: #81A69B;
+    padding: 0.6em;
+    border-radius: 10px;
+    margin: 0.25em;
+    line-height: 1.5em;;
+    font-size: x-large;
+
+}
+.relationship-headings h3:hover{
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: #81A69B;
+    opacity: 0.5;
+}
+
+.selected {
+    background-color: #ffef99; /* or any color you want */
+    transition: background-color 0.3s ease;
+}
+
+.flex-container > div {
+    /*
+    line-height: 15px;
+    font-size: 15px;
+    */
+    flex: 1; /* Distributes space evenly */
+    max-width: 800px;
+    min-width: 300px; /* Prevents content from shrinking too much */
+    padding: 1em;
+    text-align: center;
+}
+  
+.flex-container img {
+    max-width: 70%; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+   
+}
+
+
+header , main, nav, footer{
+    border-radius: 10px;
+}
+
+header {
+    grid-area: header;
+    color: #414141;
+    position: sticky;
+
+    
+}
+
+main {
+    grid-area: main;
+    padding-right: 1em;
+}
+
+main a {
+    color:#6461A0;
+}
+
+nav {
+    grid-area: nav;
+    color: #414141;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-color:#414141;
+    
+}
+
+nav h2 {
+    color: #414141;
+}
+footer {
+    grid-area: footer;
+    /*background-color: lightgray;*/
+    text-align: center;
+}
+
+/*on web view, the nav icon for the model view is hidden*/
+.nav-display{
+    display: none;
+}
+
+/*on the web view, the nav bar is shown*/
+.links {
+    display: block;
+}
+
+
+
+/* TABLET media queries*/
+@media (max-width: 768px){
+    
+    .container {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr  auto  auto ;
+            grid-template-areas:
+            "header  header"
+            "nav nav"
+            "main main"
+            "footer  footer";
+            padding: 0px;
+    }
+
+    /*on the tablet view, the nav bar icon for mobile is hidden*/
+    .nav-display{
+        display: none;
+    }
+
+    #message{
+        display: none;
+    }
+    /*on tablet view, the nav bar links are visible*/
+    .links {
+        display: inline;
+    }
+    
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+  
+
+    nav h3 {
+        display: inline-block;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .flex-container img {
+        width: min-content; /* Makes image responsive */
+        height: auto; /* Maintains aspect ratio */
+            
+    }
+    
+}
+
+
+/* MOBILE media queries*/
+@media (max-width: 480px){
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr  auto  auto ;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    }
+
+    /*on mobile view, the nav bar icon is visible*/
+    .nav-display{
+        display: inline;
+    }
+    /*on the mobile view, the nav bar links are not shown unless the nav bar icon is toggled*/
+    .links{
+        display:none;
+    }
+
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    p{
+        font-size: 1.2em;
+    }
+
+
+    nav h3 {
+        display: inline-block;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    nav {
+        padding: 0px;
+    }
+    
+    .flex-container img {
+        width: min-content; /* Makes image responsive */
+        height: auto; /* Maintains aspect ratio */
+            
+    }
+   
+}
+
+/* Website Made for Light Mode so color specification is for dark mode */
+/* Dark Mode */
+@media (prefers-color-scheme: dark){
+    html {
+        background-color: #414141;
+    }
+    h1 {
+        color: white;
+    }
+    
+    h4, h5, h6, th, p, ul, li, ol, td {
+       color:  #414141;
+    }
+
+    h2 {
+        display: inline-flex;
+        padding: 0.5em;
+        border-radius: 10px;
+        
+    }
+    svg line{
+        stroke: white
+    }
+
+    #title {
+        color: white;
+    }
+
+    footer h4{
+        color: white;
+    }
+
+    #message {
+        color: white;
+    }
+
+}

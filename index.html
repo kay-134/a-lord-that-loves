@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>A Lord That Loves</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&family=Jersey+25&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="icon" href="cursor.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1><a id = "title" href="/index.html">A Lord That Loves</a></h1>
+                
+            </header>
+
+            <nav>
+                <h2 id="message"><span id="timeofhour">hi</span></h2>
+                <div class = "nav-display">
+                    <svg width="60" height="35"  fill="none" onClick = "mobileNav()">
+                        <line x1="10" y1="14" x2="50" y2="14" stroke="#373502" stroke-width="5" stroke-linecap="round" />
+                        <line x1="10" y1="22" x2="50" y2="22" stroke="#373502" stroke-width="5" stroke-linecap="round"/>
+                        <line x1="10" y1="30" x2="50" y2="30" stroke="#373502" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+
+                </div>
+
+                <div class ="links">
+                    <h3><a href = "index.html">Home</a></h3>
+                    <h3><a href = "content.html">Relationships</a></h3>
+                    <h3><a href = "scriptures.html">Scriptures</a></h3>
+                </div>
+            </nav>
+
+            <main>
+                <div class="flex-container">
+                    <div>
+                        <img 
+                            id = "homePhoto"
+                            src="/images/main/me-1500.png" 
+                            alt="A photo of Kayley grinning ear to ear"
+                            width="400" 
+                            height="auto" 
+                            srcset="./images/main/me-3000.png 2x, ./images/main/me-4500.png 3x">
+                        
+                    </div>
+                    <div>
+                        <h2>Hi I'm Kayley <br> & I love God!</h2>
+                       
+                        <p>Although I grew up in a Christian Non-Denominational Family, I only really started to think of my relationship with God as a personal one almost 5 years ago! <br> <br>I love talking about the ways in which having a personal relationship with God and being apart of a church community has made an impact on my life!</p>
+                        <p>I am by no means any kind of biblical scholar or even expert, <i>but</i> I don't want that to stop me from sharing biblical insights I've come across in my own personal bible studies. Plus I've never had the chance to really make a project about my Christian background and thought it would be cool to combine my love for code and love for God!</p>
+
+                        <h2>So Kayley, what's this website about?</h2>
+                        <p>I'm so glad you asked! I recently took a class called Love Actually at NYU touching on the psychology of love and wanted to think of ways in which psychological approached to relationships can help us better think about having a relationship with God! Click some of the pages on the side to see what that could look like!</p>
+                    </div>
+                </div>
+            </main>
+        
+            <footer>
+                <h4>All from the mind and heart of Kayley Chery  </h4>
+            </footer>
+
+        </div>
+        <!--
+        <script>
+            // 1. create variable to store current hour (0-23)
+            let hour = new Date().getHours();
+            let minute = new Date().getMinutes();
+            console.log("Hours: ", hour, minute);
+                
+
+            // 2. Create DOM queries 
+            // - element with id "timeofday" -> to provide the time of day
+            // - element with id "message" -> to update message
+            // - body element -> to change background color
+           
+            let message = document.getElementById("message");
+            let background = document.querySelector("body");
+            let timeofhour = document.getElementById("timeofhour");
+
+            // 3. center-align the heading using javascript
+            message.style.textAlign = "center";
+
+            // 4. Write conditional logic
+            // if daytime (hour is between 6 and 18)
+
+            function clock() {
+                let minute = new Date().getMinutes();
+                let hour = new Date().getHours(); // re-capture current hour in case it changed
+
+                if (hour <= 11) {
+                    timeofhour.textContent = (hour + 1) + ":" + (minute < 10 ? "0" + minute : minute);
+                } 
+                
+                else {
+                    timeofhour.textContent = (hour - 12) + ":" + (minute < 10 ? "0" + minute : minute);
+                }
+                console.log("hi");
+            }
+            clock();
+            setInterval(clock, 100);
+        </script>
+        -->
+    </body>
+    <script src="script.js"></script>
+</html>

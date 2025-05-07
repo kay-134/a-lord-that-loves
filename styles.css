@@ -127,15 +127,12 @@ header {
 }
 
 .flex-container {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     background-color: #C3BEFF;
     border-radius: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 10px ;
 
-    text-align: center;
-   
 }
 
 .relationship-headings h3{
@@ -166,20 +163,19 @@ header {
     line-height: 15px;
     font-size: 15px;
     */
+     /* Distributes space evenly */
+
+    margin: 10px;
     flex: 1; /* Distributes space evenly */
     max-width: 800px;
     min-width: 300px; /* Prevents content from shrinking too much */
-    padding: 1em;
-    text-align: center;
 }
   
 .flex-container img {
     max-width: 70%; /* Makes image responsive */
     height: auto; /* Maintains aspect ratio */
-   
+
 }
-
-
 header , main, nav, footer{
     border-radius: 10px;
 }

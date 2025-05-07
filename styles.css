@@ -132,6 +132,7 @@ header {
     text-align: center;
     background-color: #C3BEFF;
     border-radius: 10px;
+    padding: 30px;
 
 }
 
@@ -165,7 +166,7 @@ header {
     */
      /* Distributes space evenly */
 
-    margin: 10px;
+   
     flex: 1; /* Distributes space evenly */
     max-width: 800px;
     min-width: 300px; /* Prevents content from shrinking too much */

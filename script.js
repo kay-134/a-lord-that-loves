@@ -131,7 +131,7 @@ function nav(){
 
 //for the knowledge option on the website
 function knowledge() {
-    heading.textContent = "Knowledge";
+    heading.textContent = " ~ Knowledge ~ ";
     blurb.textContent = "Knowledge can be considerred the shared confidential information about histories, preferences, feelings, and desire ";
     paragraph.textContent = "God is the ultimate example of someone who knows us completely. Aside from creating us and knowing who we were before we were even born, he knows our thoughts, the good, bad, and ugly. It’s comforting to me, at least to know that even when my closest friends may not understand me, I have a creator who does and may know things about me that I have yet to discover!";
     scriptures_header.textContent = "Scriptures About God's Knowledge";
@@ -141,7 +141,7 @@ function knowledge() {
 }
 
 function interdependence() {
-    heading.textContent = "Interdependence";
+    heading.textContent = " ~ Interdependence ~ ";
     blurb.textContent = "Interdependence can be considerred the ways in which you need & influence one another (in strong, frequent, diverse, and enduring ways)";
     paragraph.textContent = "God doesn’t need us, but wants us. He has all the power in the world, yet decided to make you and m,e and consider us as his children and not pawns to be ruled over, which makes a relationship with God fairly special. Although we can’t necessarily influence God, we can rely on God’s divine insight/power in ways that surpass human capability";
     scriptures_header.textContent = "Scriptures About Interdependence With God";
@@ -151,7 +151,7 @@ function interdependence() {
 }
 
 function caring() {
-    heading.textContent = "Caring";
+    heading.textContent = " ~ Caring ~ ";
     blurb.textContent = "Caring can be defined as feeling more affection towards each other compared to others";
     paragraph.textContent = "There are countless scriptures regarding trusting God and more specifically God’s just nature. Knowing that justice is a priority to God makes it easier for me to trust him.";
     scriptures_header.textContent = "Scriptures About Trusting God";
@@ -161,7 +161,7 @@ function caring() {
 }
 
 function trust() {
-    heading.textContent = "Trust";
+    heading.textContent = " ~ Trust ~ ";
     blurb.textContent = "Trust is the expectation to be treated fairly & honorably and that no harm will come from relationship";
     paragraph.textContent = "There are countless scriptures regarding trusting God and more specifically God’s just nature. Knowing that justice is a priority to God makes it easier for me to trust him.";
     scriptures_header.textContent = "Scriptures About Trusting God";
@@ -171,7 +171,7 @@ function trust() {
 }
 
 function responsiveness() {
-    heading.textContent = "Responsiveness";
+    heading.textContent = " ~ Responsiveness ~ ";
     blurb.textContent = "Responsiveness can be defined as the ability to recognize, understand, and support wishes";
     paragraph.textContent = "Since God has a deeper knowledge of who we are, it is easier for God to respond and understand our needs. God might not always respond in the ways we expect, but he still understands our needs.";
     scriptures_header.textContent = "Scriptures About God's Responsiveness";
@@ -181,7 +181,7 @@ function responsiveness() {
 }
 
 function mutuality() {
-    heading.textContent = "Mutuality";
+    heading.textContent = " ~ Mutuality ~ ";
     blurb.textContent = "Mutuality can be defined as thinking of things as “us” and “we” instead of “me” and “him/her/them";
     paragraph.textContent = "The greatest example of mutuality that God displays is through the human and physical embodiment of his power through Jesus. One of the main reasons God created Jesus, a human being with divine powers, is to have an example of someone who knows what we, the everyday person, deal with. ";
     scriptures_header.textContent = "Scriptures About God's Mutuality";
@@ -191,7 +191,7 @@ function mutuality() {
 }
 
 function commitment() {
-    heading.textContent = "Commitment";
+    heading.textContent = " ~ Commitment ~ ";
     blurb.textContent = "Commitment can be defined as the want and expect relationship to continue & invest effort into maintaining relationships";
     paragraph.textContent = "God definitely wants us to have a relationship with him and wants us to invest in a relationship with him, yet whether we choose to reciprocate is up to us because we have free will. God put in effort to give us the Bible as a toolkit on how to have a relationship with him and others!";
     scriptures_header.textContent = "Scriptures About God's Commitment to Us";
